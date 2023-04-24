@@ -25,20 +25,20 @@ jobs:
           
       - name: Commit changes
         run: |
-          git config --local user.email "mazipanneh@gmail.com"
-          git config --local user.name "mazipan"
+          git config --local user.email "afandilham@gmail.com"
+          git config --local user.name "afandilham"
           git add -A
           
-          arr[0]="chore(bot): 😂 auto commit"
-          arr[1]="chore(bot): 😱 auto commit"
-          arr[2]="chore(bot): 👿 auto commit"
-          arr[3]="chore(bot): 💩 auto commit"
-          arr[4]="chore(bot): 🙏 auto commit"
-          arr[5]="chore(bot): 🙈 auto commit"
-          arr[6]="chore(bot): 🐐 auto commit"
-          arr[7]="chore(bot): 🤖 auto commit"
-          arr[8]="chore(bot): 🟩 auto commit"
-          arr[9]="chore(bot): 👻 auto commit"
+          arr[0]="chore(bot): 🌺 flower commit"
+          arr[1]="chore(bot): 😱 scream commit"
+          arr[2]="chore(bot): 👿 evil commit"
+          arr[3]="chore(bot): 🚀 rocket commit"
+          arr[4]="chore(bot): 🏝️ tropic commit"
+          arr[5]="chore(bot): 🎵 music commit"
+          arr[6]="chore(bot): 🐐 goat commit"
+          arr[7]="chore(bot): 🤖 robot commit"
+          arr[8]="chore(bot): 🎸 guitar commit"
+          arr[9]="chore(bot): 👻 ghost commit"
           
           rand=$[$RANDOM % ${#arr[@]}]
           
