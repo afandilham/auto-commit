@@ -16,6 +16,7 @@ jobs:
         with:
          persist-credentials: false
          fetch-depth: 0
+         node-version: 'latest'
 
       - name: Modify last update
         run: |
