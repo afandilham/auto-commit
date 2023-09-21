@@ -12,14 +12,13 @@ jobs:
   auto_commit:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
       - uses: actions/checkout@v3      
         with:
          persist-credentials: false
          fetch-depth: 0
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 16
-          cache: 'npm'
 
       - name: Modify last update
         run: |
