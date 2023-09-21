@@ -16,7 +16,10 @@ jobs:
         with:
          persist-credentials: false
          fetch-depth: 0
-         node-version: 'latest'
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: 'npm'
 
       - name: Modify last update
         run: |
